@@ -25,7 +25,7 @@ code {
 h1 {
   color: var(--text-main-color);
   font-family: "Rouge Script", cursive;
-  font-size: 130px;
+  font-size: clamp(5rem, 8vw, 10rem);
   font-weight: normal;
   line-height: 48px;
   margin: 0 0 50px;
@@ -50,12 +50,15 @@ p {
 }
 .timer__wrapper {
   border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: var(--text-shadow-color);
   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
     rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
 }
 .timer__display {
-  padding-left: 1.5em;
+  padding: 1em 1.5em;
 }
 .timer__display > p {
   font-size: 5em;
@@ -75,6 +78,7 @@ p {
   border-radius: 100vh;
   border: 1px solid white;
   padding: 1em;
+  margin: 0 0.5em;
   transition: ease-in-out 0.3s;
 }
 .button:active {
