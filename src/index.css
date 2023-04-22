@@ -1,6 +1,6 @@
 :root {
-  --text-shadow-color: #ff9c99;
-  --text-main-color: #d74742;
+  --text-shadow-color: #82ccdd;
+  --text-main-color: #60a3bc;
 }
 * {
   box-sizing: border-box;
@@ -24,7 +24,7 @@ code {
 
 h1 {
   color: var(--text-main-color);
-  font-family: "Rouge Script", cursive;
+  font-family: Avenir, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: clamp(5rem, 10vw, 9rem);
   font-weight: normal;
   line-height: 48px;
@@ -58,7 +58,7 @@ p {
     rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
 }
 .timer__display {
-  padding: 1em 1.5em;
+  padding: 0.5em 1em;
 }
 .timer__display > p {
   font-size: 5em;
@@ -79,7 +79,7 @@ p {
   border: 1px solid white;
   padding: 1em;
   margin: 0 0.5em;
-  transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.2s;
 }
 .button:active {
   border: 1px solid var(--text-main-color);
@@ -89,7 +89,7 @@ p {
   transform: scale(120%);
 }
 .button:disabled {
-  background-color: rgb(170, 164, 164);
+  background-color: #00b8936e;
 }
 /* .button.active {
   border: 1px solid var(--text-main-color);
